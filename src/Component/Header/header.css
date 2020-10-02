@@ -3,6 +3,11 @@
     display: flex;
     align-items: center;
 }
+.header_menuIcon {
+    color: white;
+    padding: 5px;
+    height: 50px !important;
+}
 .header_logo {
   width: 100px;
   object-fit: contain;
@@ -14,18 +19,31 @@
 .header_search{
     display: flex;
     flex: 1;
+    padding: 5px;
    
 }
+.header_selectcategory{
+    height: 35px;
+    border:  rgb(195, 195, 195);
+    width: 50px;
+
+}
 .header_searchInput{
-    height: 12px;
+    height: 15px;
     padding: 10px;
-    border: none;
+    border:  rgb(195, 195, 195);
     width: 100%;
 }
 .header_searchicon {
     padding: 5px;
-    height: 22px !important;
+    height: 25px !important;
     background-color: #cd9042;
+
+}
+.header_languageoptions {
+     margin-top: 12px;
+     height: 25px !important;
+     margin-bottom: 12px;
 
 }
 .header_Nav{
@@ -49,4 +67,13 @@
 .header__optionsTwo{
     font-size: 13px;
     font-weight: 800;
+}
+.header_carticon{
+     
+
+     height: 20px !important;
+     margin-left: 0px;
+     margin-right: 2px;
+  
+   
 }
