@@ -7,8 +7,11 @@ import usa from '../assets/usa.png';
 
 
 import {Link} from 'react-router-dom';
+import { useStateValue } from "../StateProvider";
 
 export default function Header() {
+
+  const [{ basket }] = useStateValue();
     return (
       <nav className="header">
         <MenuIcon className="header_menuIcon" />
@@ -55,7 +58,9 @@ export default function Header() {
 
           <Link to="/checkout" className="header_links">
             <div className="header_options">
-              <span className="header_optionsOne">0</span>
+    <span className="header_optionsOne">
+                {basket?.length}
+      </span>
               <span className="header_optionsTwo"><AddShoppingCartIcon className="header_carticon" />cart</span>
             </div>
           </Link>

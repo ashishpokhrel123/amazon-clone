@@ -2,8 +2,24 @@ import { Button } from '@material-ui/core';
 import React from 'react'
 import dell from '../assets/delllaptop.jpg';
 import '../Products/product.css';
+import { useStateValue } from '../StateProvider';
 
 export default function Product(props) {
+    const [{ basket }, dispatch] = useStateValue();
+
+    const addproduct = () => {
+        dispatch({
+            type: 'Add to Basket',
+            item:{
+                title: props.title,
+                image: props.image ,
+                price: props.price,
+                rating: props.rating,
+
+            },
+
+        });
+    };
     return (
         <div className="product">
             <div className="product_details">
@@ -22,7 +38,7 @@ export default function Product(props) {
                 </div>
             </div>
             <img src={props.image} />
-            <Button>Add to Basket</Button>
+            <Button onClick={addproduct}>Add to Basket</Button>
     
             
         </div>
