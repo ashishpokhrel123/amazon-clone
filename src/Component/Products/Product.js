@@ -3,21 +3,27 @@ import React from 'react'
 import dell from '../assets/delllaptop.jpg';
 import '../Products/product.css';
 
-export default function Product() {
+export default function Product(props) {
     return (
         <div className="product">
             <div className="product_details">
-                <p>Dell Laptop</p>
+                <p>{props.title}</p>
                 <div className="product_price">
                     <small>$</small>
-                    <strong>80</strong>
+                    <strong>{props.price}</strong>
                 </div>
                 <div className="product_rating">
-                    <p>🌟</p>
+                    {Array(props.rating)
+                        .fill()
+                        .map((_, i) => (
+                            <p>🌟</p>
+                        ))}
+
                 </div>
-                </div>
-            <img src={dell} />
+            </div>
+            <img src={props.image} />
             <Button>Add to Basket</Button>
+    
             
         </div>
     )

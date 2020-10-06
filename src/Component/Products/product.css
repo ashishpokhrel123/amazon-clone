@@ -12,8 +12,9 @@
   z-index: 1;
 }
 
-.product__rating {
+.product_rating {
   display: flex;
+  
 }
 
 .product > img {
@@ -36,6 +37,6 @@
 }
 
 .product__info {
-  height: 50px;
+  height: 100px;
   margin-bottom: 15px;
 }
