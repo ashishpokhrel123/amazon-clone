@@ -25,3 +25,12 @@
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
 }
+.checkout_subtotal{
+    padding-right: 150px;
+    text-align: right;
+  
+    
+}
+.checkout_subtotal > p {
+    color: #111;
+}

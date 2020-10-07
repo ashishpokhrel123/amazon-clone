@@ -11,6 +11,7 @@ export default function Product(props) {
         dispatch({
             type: 'Add to Basket',
             item:{
+                id: props.id,
                 title: props.title,
                 image: props.image ,
                 price: props.price,
