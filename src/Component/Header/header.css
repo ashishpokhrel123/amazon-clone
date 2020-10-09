@@ -77,3 +77,34 @@
   
    
 }
+
+@media only screen and (max-width: 700px) {
+ .header{
+     
+ display: flex;
+  align-items: flex-start;
+ }
+ .header_search .header_selectcategory .header_searchicon .header_searchInput{
+     display: flex;
+   
+     
+ }
+ .header_Nav{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-evenly;
+    
+ }
+  .header_options {
+      display: flex;
+ }
+ .header_optionsOne{
+       font-size: 10px;
+
+ }
+ .header__optionsTwo{
+    font-size: 13px;
+    font-weight: 800;
+
+ }
+}
