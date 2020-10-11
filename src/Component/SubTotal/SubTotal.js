@@ -13,7 +13,7 @@ export default function SubTotal() {
       
             <p>
             
-              Subtotal ({basket.length} items): <strong>{getBasketSubTotal(basket)}</strong>
+              Subtotal ({basket.length} items): <strong>{getBasketSubTotal(basket)}</strong><br/>
             </p>
            
        

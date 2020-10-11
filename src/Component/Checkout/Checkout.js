@@ -26,6 +26,8 @@ export default function Checkout() {
           </div>
         ) : (
           <div>
+      
+
             <h2 className="checkout__title">Your shopping Basket</h2>
             {basket.map((item) => (
               <CheckoutProduct
@@ -44,6 +46,7 @@ export default function Checkout() {
                  <button onClick={e => history.push('/payment')}>Proceed to Checkout</button>
               </h3> 
             </div>
+             
            
           </div>
         )}

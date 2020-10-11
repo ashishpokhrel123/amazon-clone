@@ -1,0 +1,40 @@
+.payment {
+    background: white;
+}
+.payment_container > h1  {
+    text-align: center;
+    background: lightgray;
+    font-weight: 400;
+    border: 1px solid black;
+}
+.payment_section {
+    display: flex;
+    padding: 20px;
+    margin: 0 5px;
+    background-color: white;
+      border: 1px solid lightgray;
+}
+.payment_title {
+    
+    flex-grow: 0.2;
+}
+.payment_address, .payment__items, .payment_details {
+    flex: 0.8;
+}
+.payment_details {
+    font-style: bold;
+}
+.payment_card {
+    margin-top: 20px;
+}
+.payment_details >CardElement {
+     background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+
+} 
