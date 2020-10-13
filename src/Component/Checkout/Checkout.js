@@ -43,7 +43,7 @@ export default function Checkout() {
               <h3 className="checkout_subtotal">
                 SubTotal( {basket.length} item): <small>$</small>
                 <strong>{getBasketSubTotal(basket)}</strong><br></br>
-                 <button onClick={e => history.push('/payment')}>Proceed to Checkout</button>
+                 <button onClick={e => history.push('/payments')}>Proceed to Checkout</button>
               </h3> 
             </div>
              

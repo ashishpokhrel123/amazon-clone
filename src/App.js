@@ -23,10 +23,13 @@ function App() {
       <Route exact path="/login" component={Login} />
       <Route exact path="/register" component={Register} />
       <Route exact path="/checkout" component={UserCheckout} />
-       <Route exact path="/payment">
+       <Route exact path="/payments">
          <Elements stripe={promise}>
            <Payment />
          </Elements>
+         <Route exact path="/orders"/>
+       
+
        </Route>
     </Router>
   );
